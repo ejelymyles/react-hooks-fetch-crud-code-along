@@ -5,7 +5,7 @@ function Item({ item, onUpdateItem, onDeleteItem }) {
 function handleAddToCartClick(){
  fetch(`http://localhost:4000/items/${item.id}`, {
   method: "PATCH",
-  header: {
+  headers: {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({

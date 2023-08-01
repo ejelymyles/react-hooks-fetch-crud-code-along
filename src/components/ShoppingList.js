@@ -29,7 +29,7 @@ function handleUpdateItem(updatedItem){
     } else {
       return item;
     }
-  })
+  });
   setItems(updatedItems)
 }
 
